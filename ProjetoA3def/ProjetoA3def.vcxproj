@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <ProjectGuid>{48834A7A-36C1-434C-B557-8E6884015469}</ProjectGuid>
+    <EnableManagedPackageReferenceSupport>true</EnableManagedPackageReferenceSupport>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>ProjetoA3def</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <SubSystem>
+      </SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <EntryPointSymbol>
+      </EntryPointSymbol>
+      <SubSystem>
+      </SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="CompraCurso.cpp" />
+    <ClCompile Include="CursoAlunoRegistro.cpp" />
+    <ClCompile Include="CursosRegistrados.cpp" />
+    <ClCompile Include="CursoTutor.cpp" />
+    <ClCompile Include="LoginAluno.cpp" />
+    <ClCompile Include="LoginTutor.cpp" />
+    <ClCompile Include="MenuAluno.cpp" />
+    <ClCompile Include="MenuTutor.cpp" />
+    <ClCompile Include="Pagamento.cpp" />
+    <ClCompile Include="RegistrarTutor.cpp" />
+    <ClCompile Include="TelaInicial.cpp" />
+    <ClCompile Include="Programa.cpp" />
+    <ClCompile Include="RegistrarAluno.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="CompraCurso.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CursoAlunoRegistro.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CursosRegistrados.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="CursoTutor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="LoginAluno.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="LoginTutor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MenuAluno.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="MenuTutor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Pagamento.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="RegistrarTutor.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="TelaInicial.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="Tutor.h" />
+    <ClInclude Include="Usuario.h" />
+    <ClInclude Include="RegistrarAluno.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="CompraCurso.resx">
+      <DependentUpon>CompraCurso.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CursoAlunoRegistro.resx">
+      <DependentUpon>CursoAlunoRegistro.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CursosRegistrados.resx">
+      <DependentUpon>CursosRegistrados.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CursoTutor.resx">
+      <DependentUpon>CursoTutor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginAluno.resx">
+      <DependentUpon>LoginAluno.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginTutor.resx">
+      <DependentUpon>LoginTutor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuAluno.resx">
+      <DependentUpon>MenuAluno.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuTutor.resx">
+      <DependentUpon>MenuTutor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pagamento.resx">
+      <DependentUpon>Pagamento.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarAluno.resx">
+      <DependentUpon>RegistrarAluno.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarTutor.resx">
+      <DependentUpon>RegistrarTutor.h</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaInicial.resx">
+      <DependentUpon>TelaInicial.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
